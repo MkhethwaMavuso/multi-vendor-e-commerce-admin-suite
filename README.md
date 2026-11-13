@@ -101,7 +101,7 @@ Protected auth uses an HTTP-only JWT cookie, with Bearer token support for API c
 
 ### Netlify
 
-Use `client/` as the site base directory, `npm run build` as the build command, and `dist` as the publish directory. Set `VITE_API_URL` to the Render API URL including `/api`. The included Netlify config provides a history fallback for the SPA.
+Use the repository root as the site base directory. The root `netlify.toml` builds the client workspace and publishes `client/dist`, with a history fallback for the SPA. Set `VITE_API_URL` to the Render API URL including `/api`.
 
 ### Render
 
